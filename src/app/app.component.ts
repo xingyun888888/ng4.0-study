@@ -13,6 +13,8 @@ import {Hero} from './hero'
                 </li>
              </ul>
              <input type="text">
+             <a routerLink="/heroes">Heroes</a>
+             <router-outlet></router-outlet>
              `,
 })
 export class AppComponent  {
@@ -22,10 +24,10 @@ export class AppComponent  {
       city:"厦门"
     };
     heroes = [
-      new Hero(1,"Windstorm"),
-      new Hero(13,"Bombasto"),
-      new Hero(15,"Magneta"),
-      new Hero(20,"Tornado")
+      new Hero(1,"Windstorm",""),
+      new Hero(13,"Bombasto",""),
+      new Hero(15,"Magneta",""),
+      new Hero(20,"Tornado","")
     ];
     myHero = this.heroes[0]
 }
